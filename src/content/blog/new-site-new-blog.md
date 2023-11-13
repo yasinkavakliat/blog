@@ -36,3 +36,5 @@ pnpm astro add tailwind
 And the installer guides you through everything you need to setup TailwindCSS. And it gets configured for you too (love that DX).
 
 After that, it is mostly styling your website and optimizing it for mobile, tablet and desktop view.
+
+That's it for todays session, see you next time!
