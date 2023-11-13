@@ -2,19 +2,37 @@
 title: "New site, new blog"
 description: "Here we go again"
 pubDate: "Oct 08 2023"
-heroImage: "/blog/josh-hild-0fVKQbBqB9k-unsplash.jpg"
+heroImage: "/blog/new-site-new-blog/header.jpg"
 ---
 
 Photo by <a href="https://unsplash.com/@joshhild?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Josh Hild</a> on <a href="https://unsplash.com/photos/brown-field-under-cloudy-sky-during-daytime-0fVKQbBqB9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 <hr />
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## It's that time again, where I've once again rebuild my personal website
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+But this time, there is also a new domain. Couple weeks (or a month) ago I had to chance to buy the domain of my last name with the Austrian TLD and I didn't wanted to let this chance slip away.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+This time, I'm also using *Astro* instead of Next.js. Astro makes it really easy to build a website with a blog, because it already has an easy way of rendering markdown content. To get started with Astro, you need Node.js to be installed (in my case with pnpm) and run the following command in the command line:
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+```bash
+# create a new project with pnpm
+pnpm create astro@latest
+```
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+If you don't have **pnpm** installed, you can run the same command with `npm`.
+The installation guide will even ask you if you want to use their blog template:
+![Astro's command line](../../../public/blog/new-site-new-blog/1.png)
+
+This is what the complete initialization process looked for me:
+![Astro's command line finished](../../../public/blog/new-site-new-blog/2.png)
+
+After that, you can open that directory in your favourite editor/IDE and start the server. After that, I've installed TailwindCSS (btw I lvoe TailwindCSS and use it everywhere I can). Astro makes this pretty easy with the following command:
+
+```bash
+pnpm astro add tailwind
+```
+
+And the installer guides you through everything you need to setup TailwindCSS. And it gets configured for you too (love that DX).
+
+After that, it is mostly styling your website and optimizing it for mobile, tablet and desktop view.

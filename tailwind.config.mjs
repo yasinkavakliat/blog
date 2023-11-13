@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Switzer-Variable", ...defaultTheme.fontFamily.sans],
+        sans: ["Mona-Sans", ...defaultTheme.fontFamily.sans],
       },
     },
   },
