@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Mona-Sans";
-  src: url("/fonts/Mona-Sans.woff2") format("woff2");
+  font-family: "InterVariable";
+  src: url("/fonts/InterVariable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
