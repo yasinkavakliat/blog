@@ -9,35 +9,25 @@ type Props = CollectionEntry<"blog">["data"];
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
-<article class="prose-img:my-0">
-  <div class="group flex flex-col items-center justify-center">
-    <BlogHero
-      post={{
-        data: {
-          title: title,
-          description: description,
-          heroImage: heroImage,
-          pubDate: pubDate,
-        },
-      }}
-    />
-  </div>
-  <div
-    class="relative flex flex-col items-start justify-between gap-4 md:flex-row"
-  >
-    <div class="sticky top-12 mt-12">
-      <Author />
-    </div>
-    <div class="w-full max-w-prose">
-      <h3>{description}</h3>
-      {
-        updatedDate && (
-          <p>
-            Last updated on <FormattedDate date={updatedDate} />
-          </p>
-        )
-      }
-      <slot />
-    </div>
-  </div>
+<article class="group prose-img:my-0">
+  <BlogHero
+    post={{
+      data: {
+        title: title,
+        description: description,
+        heroImage: heroImage,
+        pubDate: pubDate,
+      },
+    }}
+  />
+  <h3>{description}</h3>
+  {
+    updatedDate && (
+      <p>
+        Last updated on <FormattedDate date={updatedDate} />
+      </p>
+    )
+  }
+  <Author />
+  <slot />
 </article>
