@@ -2,12 +2,31 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout>
-  <img src="/me.png" alt="Yasin Kavakli with his daughter" class="h-64" />
-  <h1>Hello, my name is Yasin.</h1>
-  <p>
-    I am a fullstack software developer with multiple years experience with
-    programming languages and frameworks like C#/.NET, JavaScript, TypeScript,
-    PHP, React, Vue.js, Angular, Laravel and Blazor.
-  </p>
+<BaseLayout title="Who am I?">
+  <div>
+    <div>
+      <h2>
+        Hi, I am Yasin and I live in Austria, Lower Austria to be more precise.
+      </h2>
+      <img
+        src="/map.png"
+        alt="Map showing europe and Lower Austria"
+        class="size-16 rounded-lg border border-neutral-50 shadow"
+      />
+    </div>
+    <p>
+      I have worked as a backend, frontend and fullstack developer for many
+      years. I also have experience in hardware, networking and almost every
+      product line from Microsoft that is used in enterprises.
+    </p>
+    <p>
+      I had the chance to work with the following technologies/frameworks and
+      write code in these languages to date:
+    </p>
+    <p class="font-bold">
+      React, Next.js, TypeScript, JavaScript, .NET (C#), Blazor, Laravel (PHP),
+      Vue.js, Docker, Kubernetes, Swift, PowerShell, React Native, Expo and
+      Bash.
+    </p>
+  </div>
 </BaseLayout>

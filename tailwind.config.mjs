@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["InterVariable", ...defaultTheme.fontFamily.sans],
+        sans: ["Switzer-Variable", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), "prettier-plugin-tailwindcss"],
+  plugins: [require("@tailwindcss/typography")],
 };

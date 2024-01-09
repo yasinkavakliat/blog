@@ -11,23 +11,19 @@ const { title } = Astro.props;
   <head>
     <BaseHead title={title} description={SITE_DESCRIPTION} />
   </head>
-  <body
-    class="bg-slate-200 dark:bg-slate-900 font-sans min-h-screen lg:prose-lg flex flex-col prose dark:prose-invert max-w-none h-screen antialiased scroll-smooth prose-hr:text-slate-500 prose-a:text-slate-600 dark:hover:prose-a:text-slate-400 hover:prose-a:text-slate-700 prose-img:rounded-lg relative"
-  >
-    <div
-      class="max-w-2xl w-full h-1/2 absolute top-0 right-0 -z-10 rounded-full bg-gradient-to-bl from-pink-800 via-blue-700/20 to-green-500/20 blur-3xl"
-    >
-    </div>
+  <body class="flex h-svh w-full flex-col bg-zinc-900 font-sans antialiased">
     <Header />
 
-    <div
-      class="container mx-auto px-2 lg:px-0 flex justify-center flex-col flex-1 py-20 lg:py-12 relative"
+    <main
+      class="mx-4 flex-1 overflow-y-scroll rounded-2xl bg-white px-4 py-4 shadow-xl shadow-black"
     >
-      <main class="p-4 max-w-prose">
+      <div class="container prose mx-auto md:prose-lg">
         <slot />
-      </main>
-    </div>
+      </div>
+    </main>
+
     <Footer />
+
     <!-- Cloudflare Web Analytics -->
     <script
       defer
