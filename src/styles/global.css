@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: 'Switzer-Variable';
-    src: url('/fonts/Switzer-Variable.woff2') format('woff2'),
-        url('/fonts/Switzer-Variable.woff') format('woff'),
-        url('/fonts/Switzer-Variable.ttf') format('truetype');
-    font-weight: 100 900;
-    font-display: swap;
-    font-style: normal;
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings:
+    "liga" 1,
+    "tnum" 1,
+    "zero" 1,
+    "ss01" 1,
+    "cv11" 1,
+    "ss03" 1,
+    "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }

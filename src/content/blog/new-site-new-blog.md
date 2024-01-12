@@ -13,7 +13,7 @@ Photo by <a href="https://unsplash.com/@joshhild?utm_content=creditCopyText&utm_
 
 ## It's that time again, where I once again rebuild my personal website
 
-But this time, there is also a new domain. Couple weeks (or a month) ago I had to chance to buy the domain of my last name with the Austrian TLD and I didn't wanted to let this chance slip away.
+But this time, there is also a new domain. Couple weeks (or a month) ago I had to chance to buy the domain of my last name with the Austrian TLD and I didn't wanted to let this chance slip away
 
 This time, I'm also using *Astro* instead of Next.js. Astro makes it really easy to build a website with a blog, because it already has an easy way of rendering markdown content. To get started with Astro, you need Node.js to be installed (in my case with pnpm) and run the following command in the command line:
 

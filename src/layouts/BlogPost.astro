@@ -1,33 +1,35 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Author from "../components/Author.astro";
 import BlogHero from "../components/BlogHero.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
-<article class="group prose-img:my-0">
-  <BlogHero
-    post={{
-      data: {
-        title: title,
-        description: description,
-        heroImage: heroImage,
-        pubDate: pubDate,
-      },
-    }}
-  />
-  <h3>{description}</h3>
-  {
-    updatedDate && (
-      <p>
-        Last updated on <FormattedDate date={updatedDate} />
-      </p>
-    )
-  }
-  <Author />
+<p class="text-sm text-zinc-400">
+  Published on <FormattedDate date={pubDate} />
+</p>
+<BlogHero
+  post={{
+    data: {
+      title: title,
+      description: description,
+      heroImage: heroImage,
+      pubDate: pubDate,
+    },
+  }}
+/>
+<article>
   <slot />
 </article>
+
+<script>
+  window.addEventListener("keydown", function (event) {
+    const { key } = event;
+    if (key === "Backspace") {
+      this.location.href = "/blog";
+    }
+  });
+</script>
