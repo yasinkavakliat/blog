@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  font-display: swap;
   font-family: Inter, sans-serif;
   font-feature-settings:
     "liga" 1,
@@ -15,6 +16,21 @@
 }
 @supports (font-variation-settings: normal) {
   :root {
+    font-display: swap;
     font-family: InterVariable, sans-serif;
   }
+}
+
+.bg-pattern {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(
+      #cdcfd2 0.8500000000000001px,
+      transparent 0.8500000000000001px
+    ),
+    radial-gradient(#cdcfd2 0.8500000000000001px, #ffffff 0.8500000000000001px);
+  background-size: 34px 34px;
+  background-position:
+    0 0,
+    17px 17px;
 }

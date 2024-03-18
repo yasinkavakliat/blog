@@ -1,0 +1,22 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import { SITE_DESCRIPTION } from "../consts";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#fff" />
+    <BaseHead title={title} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="flex min-h-svh w-full bg-white p-4 antialiased">
+    <slot />
+
+    <!-- <Footer /> -->
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "70b90f9016914e0faab1191e5bca44c8"}'></script><!-- End Cloudflare Web Analytics -->
+  </body>
+</html>
