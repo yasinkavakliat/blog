@@ -5,7 +5,7 @@ pubDate: "Oct 08 2023"
 updatedDate: "Jan 10 2024"
 heroImage: "/blog/new-site-new-blog/header.jpg"
 ---
-
+********
 <hr />
 Photo by <a href="https://unsplash.com/@joshhild?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Josh Hild</a> on <a href="https://unsplash.com/photos/brown-field-under-cloudy-sky-during-daytime-0fVKQbBqB9k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
